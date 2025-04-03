@@ -1,0 +1,303 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* ----------popup------------------- */
+.popup{
+    background-color: #1D232C;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    font-size: 20px;
+}
+.popup_off{
+    font-family:"Boldonse", system-ui;
+        font-style: normal;
+        font-size: large;
+        margin: 0 5px;
+        text-align: center;
+}
+#close{
+    position: absolute;
+    right: 300px;
+    top: 10px;
+    cursor: pointer;
+}
+
+/* ------------hearder----------- */
+.header{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    background-color: white;
+    box-shadow:0px 2px 10px rgba(0,0,0) ;
+}
+
+/* --------------menubar-------------------- */
+#menubar{
+    font-size: 20px;
+    display: none;
+    cursor: pointer;
+    
+}
+.header_elements{
+    display:flex ;
+    gap: 80px;
+    padding: 0 20px;
+}
+.header_elements_link{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 900;
+}
+.header_elements_menu{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    background-color: #1D232C;
+    color: white;
+    height: 100vh;
+    width: 50%;
+    position: fixed;
+    top: 0;
+    right: -50%;
+    transition: all;
+    transition-duration: 800ms;
+    z-index: 100;
+    
+   
+}
+#close_menu{
+    font-size: 25px;
+    position: relative;
+    top: 30px;
+    left: 93%;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+.header_elements_menu a{
+    padding: 20px;
+}
+.header_elements_menu a:hover{
+    transition:all;
+    transition-duration: 800ms;
+    background-color: white;
+    color: black;
+    border-left: solid 25px rgba(10, 178, 225, 0.747);
+    transform: translateX(10px);
+    
+}
+.header_elements_link_menu{
+    color: white;
+    text-decoration: none;
+    margin-top: 10px;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 25px;
+    
+}
+
+
+/* -------------image Slider------------- */
+.main_image{
+    display: flex;
+    overflow: hidden;
+    border-radius: 10px;
+    width: 100%;
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.image_slide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    transition: 2s;
+    gap: 20px;
+    
+}
+.img_main{
+    width: 98vw;
+    height: 79vh;
+    border-radius: 10px;
+    filter: brightness(0.4);
+    margin-left: 0.5%;
+    
+}
+.text_content{
+    position: absolute;
+    top: 32%;
+    text-align: center;
+    left: 19%;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.text_content h1{
+    font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size:4.5vw;
+  color: white;
+
+}
+.text_content p{
+    font-size: 30px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: white;
+}
+.text_content button{
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 3px;
+    border: none;
+}
+.left_btn{
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    z-index: 6;
+}
+.left_btn i{
+    font-size: 10vw;
+    cursor: pointer;
+}
+.right_btn{
+    position: absolute;
+    top: 35%;
+    right: 10%;
+    z-index: 7;
+}
+.right_btn i{
+    font-size: 10vw;
+    cursor: pointer;
+}
+
+
+/* -------------------brands---------------- */
+.brand{
+    padding: 20px;
+}
+.brand h1{
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  margin: 0 25px;
+  margin-bottom: 20px;
+}
+.brand_list{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin: 0 25px;
+}
+.brand_name{
+    width: 70px;
+   
+}
+.brand_name p{
+    text-align: center;
+    font-size: 25px;
+    margin-top: 5px;
+}
+
+.brand_name img{
+    width: 100%;
+    filter: brightness(0);
+}
+
+
+
+
+@media screen and (max-width:1400px) {
+    .text_content h1{
+        font-size: 4.5vw;
+    }
+}
+@media screen and (max-width:1280px){
+    .popup{
+        font-size: 16px;
+    }
+    .popup_off{
+        font-size: 16px;
+    }
+    #close{
+        right: 30px;
+
+    }
+
+}
+@media screen and (max-width:1024px){
+    #menubar{
+        display: block;
+    }
+    .header_elements{
+        display: none;
+    }
+    #close_menu{
+        left: 90%;
+    }
+    .image_slide{
+        gap: 20px;
+    }
+    .img_main{
+        margin-left:-0.5% ;
+    }
+
+
+}
+@media screen and (max-width:800px){
+    .popup{
+        font-size: 12px;
+    }
+    .popup_off{
+        font-size: 12px;
+    }
+    #close{
+        right: 25px;
+        top: 13px;
+
+    }
+    .header{
+        font-size: 12px;
+    }
+    #menubar{
+        display: block;
+    }
+    .header_elements{
+        display: none;
+    }
+    .header_elements_link_menu{
+        font-size: 20px;
+
+    }
+    #close_menu{
+        left: 85%;
+    }
+    .main_image{
+        margin-bottom: 20px;
+    }
+    .brand_name{
+        width: 10%;
+    }
+    .brand_name p{
+        font-size: 12px;
+    }
+    .brand h1{
+        text-align: center;
+    }
+}
