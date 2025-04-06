@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+html{
+    scroll-behavior: smooth;
+}
 /* ----------popup------------------- */
 .popup{
     background-color: #1D232C;
@@ -60,6 +63,7 @@
     color: black;
     font-size: 20px;
     font-weight: 900;
+    
 }
 .header_elements_menu{
     display: flex;
@@ -308,6 +312,7 @@
     border: none;
     box-shadow: 3px 3px 10px rgba(0,0,0);
 }
+/* -------------wanded-------------- */
 .wanted{
     padding: 20px;
     
@@ -362,6 +367,107 @@
     color: rgb(226, 19, 19);
     transition: 1s;
 }
+/* -----------------ads box------------- */
+.ads_box{
+    padding: 20px;
+    background-color: #1D232C;
+    margin: 30px;
+}
+.ads_container{
+    display: flex;
+    gap: 10%;
+    align-items: center;
+}
+.ads_img img{
+    width: 40vw;
+}
+.ads_text{
+    color: white;
+    text-align:center;
+
+}
+.ads_text h1{
+    font-family:"Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 3vw;
+  text-transform: uppercase;
+}
+.ads_text h3{
+    font-size: 2vw;
+    margin-top: 20px;
+
+}
+.ads_text button{
+    padding: 10px 15px;  
+    border-radius: 10px;  
+    border: none;
+    box-shadow: 3px 5px 10px rgba(0,0,0);
+    margin-top: 40px;
+    cursor: pointer;
+    font-size: 2vw;
+}
+.input_box{
+    text-align: center;
+    margin: 20px 30px;
+}
+.input_box h1{
+    font-family:"Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal ;
+  font-size :50px;
+  margin-bottom: 5px;
+}
+.input_box p{
+    font-size: 30px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 25px;
+}
+.input_box input{
+    width: 75%;
+    height: 30px;
+    border: #1D232C solid 3px;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+.input_box button{
+    padding: 10px 15px;
+    margin-top: 20px;
+    font-size: 20px;
+    background-color: #1D232C;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+}
+
+.footer{
+    background-color: #1D232C;
+    padding: 30px;
+    color: white;
+}
+.footer h1{
+    font-size: 50px;
+    font-family:"Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.footer p{
+    font-size: 2vw;
+    margin-top: 10px;
+}
+.media_icon{
+    margin-top: 30px ;
+    display: flex;
+    gap: 5%;
+    
+    margin-bottom: 30px;
+}
+.footer i{
+    font-size: 30px;
+    cursor: pointer;
+
+}
 
 @media screen and (max-width:1400px) {
     .text_content h1{
@@ -379,7 +485,12 @@
         right: 30px;
 
     }
-   
+    .input_box p{
+        font-size: 20px;
+    }
+    .input_box h1{
+        font-size: 40px;
+    }
 
 }
 @media screen and (max-width:1024px){
@@ -415,6 +526,12 @@
         grid-template-columns: 2fr 2fr;
         width: 100%;
         height:10%;
+    }
+    .input_box h1{
+        font-size: 30px;
+    }
+    .input_box p{
+        font-size: 20px;
     }
    
 
@@ -467,6 +584,9 @@
     .wanted_container{
         gap: 15px;
     }
+    .input_box p{
+        font-size: 15px;
+    }
 
     
 }
@@ -479,5 +599,9 @@
     .arrival_container button{
         right: 20%;
     }
+    .input_box p{
+        font-size: 10px;
+    }
+
 }
 

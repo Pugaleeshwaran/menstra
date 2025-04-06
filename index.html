@@ -10,15 +10,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Boldonse&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="icon" href="./icon/icon.png">
 </head>
 
 <body>
     <!------------------popup----------------->
-    <div class="popup">
+    <div class="popup" id="pop">
         <h2>Sign Up and <span class="popup_off">GET 20% OFF</span> for your Frist Order</h2>
         <h2 id="close">X</h2>
     </div>
-
+<div id="home"></div>
     <!-- ------------------header------------------- -->
     <div class="header">
         <h1>MANSTRA</h1>
@@ -27,24 +28,24 @@
         </div>
 
         <div class="header_elements">
-            <a class="header_elements_link" href="#">Home</a>
-            <a class="header_elements_link" href="#">New Arrival</a>
-            <a class="header_elements_link" href="#">Most Wanted</a>
+            <a class="header_elements_link" href="#home">Home</a>
+            <a class="header_elements_link" href="#arrival">New Arrival</a>
+            <a class="header_elements_link" href="#wanted">Most Wanted</a>
             <a class="header_elements_link" href="#">Collections</a>
-            <a class="header_elements_link" href="#">content Us</a>
+            <a class="header_elements_link" href="#input">content Us</a>
         </div>
     </div>
     <!-- -----------slide menubar--------------- -->
     <div class="header_elements_menu">
         <p id="close_menu">X</p>
-        <a class="header_elements_link_menu" href="#">Home</a>
-        <a class="header_elements_link_menu" href="#">New Arrival</a>
-        <a class="header_elements_link_menu" href="#">Most Wanted</a>
+        <a class="header_elements_link_menu" href="#home">Home</a>
+        <a class="header_elements_link_menu" href="#arrival">New Arrival</a>
+        <a class="header_elements_link_menu" href="#wanted">Most Wanted</a>
         <a class="header_elements_link_menu" href="#">Collections</a>
-        <a class="header_elements_link_menu" href="#">content Us</a>
+        <a class="header_elements_link_menu" href="#input">content Us</a>
     </div>
     <!--------------main_image------------------------>
-    <div class="main_image">
+    <div class="main_image" id="img">
 
 
         <div class="left_btn">
@@ -140,7 +141,7 @@
 
     <!-- ---------------New arrival------------------ -->
 
-    <div class="new_arrival">
+    <div class="new_arrival" id="arrival">
         <h1>New Arrivals</h1>
         <div class="arrival_img">
             <div class="arrival_container">
@@ -165,7 +166,7 @@
     </div>
     <!-- -------------most wanded---------------- -->
 
-    <div class="wanted">
+    <div class="wanted" id="wanted">
         <h1>Most wanted</h1>
         <div class="wanted_container">
             <div class="wanted_img">
@@ -220,6 +221,48 @@
             </div>
         </div>
     </div>
+    <!-- ---------------ads box-------- -------->
+     <div class="ads_box">
+        <div class="ads_container">
+            <div class="ads_img">
+                <img src="./image/m1.jpg" alt="">
+            </div>
+            <div class="ads_text">
+                <h1>Limited Offer</h1>
+            <h3>35% OFF on this for the first 30 Customers</h3>
+            <button>Shop Now <i class="fa-solid fa-arrow-right" style="color: #000000;"></i></button>       
+        </div>
+            
+
+        </div>
+     </div>
+
+     <!-- ------------input box----------- -->
+
+     <div class="input_box" id="input">
+        <h1>Join our News Letter</h1>
+        <p>Signup for our email newspaper to get exclusive discounts, updates, and more...</p>
+        <input type="text">
+        <br>
+        <button>Subcribe <i class="fa-solid fa-arrow-right" style="color: white;"></i></button>
+
+     </div>
+
+     <!-- ----------------footer------------------ -->
+      <div class="footer">
+        <h1>Mentra</h1>
+        <p>The Standard chunk of Lorem ipsum used since the 1500s is reprodused below for those interest.</p>
+        <div class="media_icon">
+            <i class="fa-brands fa-twitter" ></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-tiktok"></i>
+            <i class="fa-brands fa-youtube"></i>
+
+        </div>
+        <p>@ 2023 Mentra.com</p>
+
+      </div>
 
 
 
