@@ -54,3 +54,27 @@ leftbtn.addEventListener("click",function(){
         
     }
 })
+
+// ------------like--------------------
+var heart=document.getElementsByClassName('icon');
+
+ for(i=0;i<heart.length;i++){
+
+    heart[i].addEventListener("click",function(){
+        if(event.target.classList.contains("far")){
+            event.target.classList.add("fas")
+            event.target.classList.remove("far")
+        }
+        else{
+            event.target.classList.add("far")
+            event.target.classList.remove("fas")
+        }
+    })
+}
+
+//-------scroll left and right----------------
+
+window.addEventListener("scroll",function(){
+    var elements=this.document.querySelectorAll(".wanted")
+})
+
