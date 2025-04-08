@@ -469,6 +469,219 @@ html{
 
 }
 
+
+
+/* ------------------contact page------------------- */
+
+#menubar_con{
+    font-size: 20px;
+    display: none;
+    cursor: pointer;
+    
+}
+
+#close_menu_con{
+    font-size: 25px;
+    position: relative;
+    top: 30px;
+    left: 93%;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+.con_form{
+    background-color: #1D232C;
+    padding: 50px 30px;
+    margin: 20px 10%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+
+}
+.con_form h1{
+    font-family:"Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal ;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.form_content{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.form_name label{
+    margin-top: 20px;
+}
+.form_name input{
+    width: 100%;
+    height: 30px;
+    font-size: 20px;
+    margin-top: 10px;
+}
+.form_mail label{
+    margin-top: 20px;
+}
+.form_mail input{
+    width: 100%;
+    height: 30px;
+    font-size: 20px;
+    margin-top: 10px;
+}
+.form_textarea label{
+    margin-top: 20px;
+}
+.form_textarea textarea{
+    width: 100%;
+    height: 100px;
+    font-size: 20px;
+    margin-top: 10px;
+}
+.form_content button{
+    padding: 10px 15px;
+    font-size: 30px;
+    width: 20%;
+    cursor: pointer;
+}
+
+
+
+
+
+/* ----------------collection page---------------------- */
+#close_collect{
+    position: absolute;
+    right: 300px;
+    top: 10px;
+    cursor: pointer;
+}
+.search_bar{
+    padding: 20px;
+    margin: 30px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.search_bar input{
+    position: relative;
+    width: 80%;
+    height: 25px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 1px black solid;
+    padding: 10px 20px;
+}
+.search_bar input:focus{
+    outline: none;
+}
+.search_bar i{
+    position: absolute;
+    right:11%;
+}
+.collection_box{
+    display: flex;
+    margin-bottom: 50px;
+    
+}
+.check_box_container{
+    border-right: 2px black solid;
+    
+    
+}
+.check_box{
+    padding:10px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 12%;
+    
+}
+.occasion{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+.occasion_item{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 10%;
+}
+.occasion_item label{
+    font-size: 30px;
+    
+}
+.occasion_item input{
+    height: 20px;
+    width: 20px;
+    
+}
+.colors{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+.colors_item{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 10%;
+}
+.colors_item label{
+    font-size: 30px;
+    
+}
+.colors_item input{
+    height: 20px;
+    width: 20px;
+}
+
+.arrival{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+.arrival_item{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 10%;
+}
+.arrival_item label{
+    font-size: 30px;
+    
+}
+.arrival_item input{
+    height: 20px;
+    width: 20px;
+}
+
+/* ------------colloction img------------ */
+.collection_img{
+    padding: 30px 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 100%;
+    justify-content: space-between;
+    
+
+} 
+.collection_container{
+    margin:10px 30px ;
+    text-align: center;
+}
+.collection_container img{
+    width: 200px;
+    cursor: pointer;
+}
+ .collection_container p{
+    margin-top: 5px;
+} 
+
 @media screen and (max-width:1400px) {
     .text_content h1{
         font-size: 4.5vw;
@@ -485,11 +698,18 @@ html{
         right: 30px;
 
     }
+    #close_collect{
+        right: 30px;
+
+    }
     .input_box p{
         font-size: 20px;
     }
     .input_box h1{
         font-size: 40px;
+    }
+    .collection_img{
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
 }
@@ -497,10 +717,16 @@ html{
     #menubar{
         display: block;
     }
+    #menubar_con{
+        display: block;
+    }
     .header_elements{
         display: none;
     }
     #close_menu{
+        left: 90%;
+    }
+    #close_menu_con{
         left: 90%;
     }
     .image_slide{
@@ -533,7 +759,9 @@ html{
     .input_box p{
         font-size: 20px;
     }
-   
+    .collection_img{
+        grid-template-columns: 1fr 1fr;
+    }
 
 
 
@@ -550,10 +778,18 @@ html{
         top: 13px;
 
     }
+    #close_collect{
+        right: 25px;
+        top: 13px;
+
+    }
     .header{
         font-size: 12px;
     }
     #menubar{
+        display: block;
+    }
+    #menubar_con{
         display: block;
     }
     .header_elements{
@@ -564,6 +800,9 @@ html{
 
     }
     #close_menu{
+        left: 85%;
+    }
+    #close_menu_con{
         left: 85%;
     }
     .main_image{
@@ -587,9 +826,15 @@ html{
     .input_box p{
         font-size: 15px;
     }
-
+    
     
 }
+@media screen and (max-width:650px){
+    .collection_img{
+        grid-template-columns: 1fr;
+    }
+}
+
 @media screen and (max-width:550px){
 
     .costomer_container{
@@ -602,6 +847,8 @@ html{
     .input_box p{
         font-size: 10px;
     }
+    
+    
 
 }
 
